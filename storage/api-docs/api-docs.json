@@ -1,0 +1,30 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "API",
+        "version": "0.0.1"
+    },
+    "paths": {
+        "/login": {
+            "post": {
+                "description": "auth",
+                "parameters": [
+                    {
+                        "name": "eventID",
+                        "in": "query",
+                        "description": "The event ID specific to this event",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Welcome page"
+                    }
+                }
+            }
+        }
+    }
+}
